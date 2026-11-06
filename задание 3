@@ -1,0 +1,13 @@
+#F = (A ∧ B) ∨ (A ∧ ¬B) ∨ (C ∧ A)
+#(a and b) or (a and not b)
+#a and (b or not b)
+#a and 1 = a
+#f = a
+print("A B C | F")
+print("------------")
+
+for a in range(0, 2):
+    for b in range(0, 2):
+        for c in range(0, 2):
+            f = a
+            print(a, b, c, "|", f)
