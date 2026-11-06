@@ -1,0 +1,14 @@
+print("A B C | F")
+print("------------")
+
+answ = 0
+
+for a in range (0,2):
+    for b in range (0,2):
+        for c in range (0,2):
+            f = (a <= b) and (not(b) or c)
+            print(a, b, c, "|", int(f))
+            if f == 1:
+                answ += 1
+
+print("Количество строк при f = 1:", answ)
