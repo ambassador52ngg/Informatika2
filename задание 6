@@ -1,0 +1,16 @@
+print("A B S0 S1 | Y")
+print("----------------")
+
+for a in range(0, 2):
+    for b in range(0, 2):
+        for s0 in range(0, 2):
+            for s1 in range(0, 2):
+                if s1 == 0 and s0 == 0:
+                    y = a
+                elif s1 == 0 and s0 == 1:
+                    y = a
+                elif s1 == 1 and s0 == 0:
+                    y = 1 - a
+                else:
+                    y = 0
+                print(a, b, s0, s1, "|", y)
