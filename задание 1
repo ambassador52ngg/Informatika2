@@ -1,0 +1,11 @@
+from math import *
+
+N = 100
+
+ibit = log(N,2)
+ibyt = ibit / 8
+
+print("\n\nКоличество информации одного сообщения:")
+print("I =", ceil(ibit), "бит")
+print("В байтах:", ibyt, "байт")
+print("В шестнадцатеричной системе:", hex(int(ibit)))
