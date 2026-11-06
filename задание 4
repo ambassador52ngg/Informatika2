@@ -1,0 +1,15 @@
+print("Overload Night Schedule | PowerOn")
+print("---------------------------------")
+
+for overload in range(0, 2):
+    for night in range(0, 2):
+        for schedule in range(0, 2):
+            if overload == 1:
+                f = 0
+            elif schedule == 1:
+                f = 1
+            elif night == 0:
+                f = 1
+            else:
+                f = 0
+            print( overload, night, schedule, "|", f)
